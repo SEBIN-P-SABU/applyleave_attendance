@@ -1,0 +1,64 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+{% load static %}
+<style>
+  @media(max-width:61.938em) {
+  
+   .card-title{
+     margin-left:-6vh;
+   }
+   .row
+   {
+     height:25vh;
+   }
+  }
+</style>
+<div class="content-wrapper">
+  {% comment %} <div class="page-header">
+    <h3 class="page-title"> Typography </h3>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">UI Elements</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Typography</li>
+      </ol>
+    </nav>
+  </div> {% endcomment %}
+<br><br><br>
+  <div class="row" style:"height:250vh">
+    <div class="col-md-6 grid-margin stretch-card">
+
+      <div class="card">
+      <a href="current" style="text-decoration:none;">
+        <div class="card-body">
+
+          <h2 class="card-title">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Trainees &nbsp&nbsp
+          <i class="mdi mdi-group text-success" style="font-size:25px; "></i>
+          </h2>
+        </div>
+      </a>
+      </div>
+      
+  </div>
+
+    <div class="col-md-6 grid-margin stretch-card">
+      <div class="card">
+          <a href="#" style="text-decoration:none";>  
+          <div class="card-body">
+              <h2 class="card-title">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Trainers &nbsp&nbsp&nbsp
+                <i class="mdi mdi-google-circles-group text-success" style="font-size:25px; "></i>
+
+              </h2>
+              
+              </div>
+          </a>
+          </div>
+          
+      </div>
+    
+    
+  
+
+</div>
+{%endblock%}
