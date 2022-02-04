@@ -1,0 +1,30 @@
+{% extends 'index.html' %} {% block content %}{% load static %}
+
+    <br><br>
+    <div class="row" style="margin-left: -22px;">
+        <div class="col-md-10 grid-margin stretch-card">
+          <div class="card" style="margin-left: 20px;">
+            <div class="card-body">
+              <h4 class="card-title">Attendance :</h4>
+              <form class="forms-sample" action="/app/Trainees_Attendancetable">
+                <div class="form-group row" >
+                  <label for="exampleInputEmail2"  class="col-sm-3 col-form-label">From</label>
+                  <div class="col-sm-6">
+                    <input type="Date" class="form-control"  id="exampleInputStartdate">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="exampleInputMobile" class="col-sm-3 col-form-label">To</label>
+                  <div class="col-sm-6">
+                    <input type="Date" class="form-control" id="exampleInputEnddate">
+                  </div>
+                </div>
+                
+                  <a href="/app/Trainees_Attendancetable" style="color: aliceblue; text-decoration: none;float:right;margin-right:18vh">  <button type="submit" class="btn btn-success me-2">Submit</button></a>
+                </form>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+{%endblock%} 

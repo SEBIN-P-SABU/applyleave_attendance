@@ -1,0 +1,191 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+
+    
+<!--<div class="row ">
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                 <div>
+                    <ul class="navbar-nav">
+                       <li class="nav-item ">
+                            <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                                <input type="text" class="form-control" placeholder="Search products">
+                            </form>
+                        </li>                   
+                    </ul>
+                </div> -->
+                
+                {% comment %} <div class="page-header">
+                    <h3 class="page-title"> Attendance </h3>
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb "> {% endcomment %}
+                                 
+                        <div class="row mt-3 mb-5">
+                            <div class="col-12 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                  <div class="row" style="margin-top: -20px">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                      <h4>Attendance :</h4><br>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                      <form>
+                                        <div class="input-group input-group-sm mb-3">
+                                          <input
+                                            type="text"
+                                            class="form-control text-white"
+                                            placeholder="Search"
+                                          />
+                                          <div class="input-group-append">
+                                            <span class="input-group-text bg-danger"
+                                              ><i
+                                                class="fas fa-search text-light"
+                                                style="font-size: 16px"
+                                              ></i
+                                            ></span>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    </div>
+                      {% comment %} </ol>
+                    </nav> {% endcomment %}
+                  
+                <div class="table-responsive">
+                    <table class="table  table-bordered ">
+                        <thead  style="background-color: black;">
+                            <tr>
+                                <!-- <th>
+                                     <div class="form-check form-check-muted m-0">
+                                        <label class="form-check-label">
+                       <input type="checkbox" class="form-check-input"> 
+                    </label>
+                                    </div> 
+                                </th> -->
+                                <th> Date </th>
+                                <th> Login Time </th>
+                                <th> Logout Time </th>
+                                <th> Status </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <!-- <td>
+                                    <div class="form-check form-check-muted m-0">
+                                        <label class="form-check-label">
+                       <input type="checkbox" class="form-check-input">
+                    </label>
+                                    </div>
+                                </td> -->
+                                <td>
+                                    <!-- <img src="assets/images/faces/face1.jpg" alt="image" /> -->
+                                    <span class="ps-2">01-01-2022</span>
+                                </td>
+                                <td>9.00 am</td>
+                                <td>1.00 pm</td>
+                                <!-- <td> Dashboard </td> -->
+                                <!-- <td> Credit card </td>
+                                <td> 04 Dec 2019 </td> -->
+                                <td>
+                                    <a href="#"><div class="badge badge-outline-success">Present</div></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- <td>
+                                    <div class="form-check form-check-muted m-0">
+                                        <label class="form-check-label">
+                       <input type="checkbox" class="form-check-input"> 
+                    </label>
+                                    </div>
+                                </td> -->
+                                <td>
+                                    <!-- <img src="assets/images/faces/face2.jpg" alt="image" /> -->
+                                    <span class="ps-2">02-01-2022</span>
+                                </td>
+                                <td>9.00 am</td>
+                                <td>2.15 pm</td>
+                                <!-- <td> Website </td> -->
+                                <!-- <td> Cash on delivered </td>
+                                <td> 04 Dec 2019 </td> -->
+                                <td>
+                                    
+                                    <a href="#"><div class="badge badge-outline-danger">Absent</div></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- <td>
+                                    <div class="form-check form-check-muted m-0">
+                                        <label class="form-check-label">
+                       <input type="checkbox" class="form-check-input"> 
+                    </label>
+                                    </div>
+                                </td> -->
+                                <td>
+                                    <!-- <img src="assets/images/faces/face5.jpg" alt="image" /> -->
+                                    <span class="ps-2">03-01-2022</span>
+                                </td>
+                                <td>10.00 am</td>
+                                <td>3.30 pm</td>
+                                <!-- <td> App design </td> -->
+                                <!-- <td> Credit card </td>
+                                <td> 04 Dec 2019 </td> -->
+                                <td>
+                                    <a href="#"><div class="badge badge-outline-success">Present</div></a><br>
+                              
+                            </tr>
+                            <tr>
+                                <!-- <td>
+                                    <div class="form-check form-check-muted m-0">
+                                        <label class="form-check-label">
+                       <input type="checkbox" class="form-check-input"> 
+                    </label>
+                                    </div>
+                                </td> -->
+                                <td>
+                                    <!-- <img src="assets/images/faces/face3.jpg" alt="image" /> -->
+                                    <span class="ps-2">04-01-2022</span>
+                                </td>
+                                <td>9.00 am</td>
+                                <td>2.00pm</td>
+                                <!-- <td> Development </td> -->
+                                <!-- <td> Online Payment </td>
+                                <td> 04 Dec 2019 </td> -->
+                                <td>
+                                    
+                                    <a href="#"><div class="badge badge-outline-danger">Absent</div></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- <td>
+                                    <div class="form-check form-check-muted m-0">
+                                        <label class="form-check-label">
+                       <input type="checkbox" class="form-check-input"> 
+                    </label>
+                                    </div>
+                                </td> -->
+                                <td>
+                                    <!-- <img src="assets/images/faces/face4.jpg" alt="image" /> -->
+                                    <span class="ps-2">05-01-2022</span>
+                                </td>
+                                <td>10.00 am</td>
+                                <td>4.00 pm</td>
+                                <!-- <td> Website </td> -->
+                                
+                                <td>
+                                    <a href="#"><div class="badge badge-outline-success">Present</div></a><br>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}
