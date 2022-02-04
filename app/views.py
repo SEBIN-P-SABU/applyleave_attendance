@@ -20,7 +20,15 @@ def Requestedleave(request):
     return render(request, 'Requestedleave.html')
 
 def Trainers_Attendancetable(request):
-    return render(request, 'Trainees_Attendancetable.html')
+    return render(request, 'Trainers_Attendancetable.html')
 def Trainers_Calendar(request):
-    return render(request, 'Trainees_Calendar.html')
+    return render(request, 'Trainers_Calendar.html')
+
+def applyleavesub(request):
+    return render(request, 'applyleavesub.html')
+
+def trainers_leave(request):
+    return render(request, 'trainers_leave.html')
+def trainees_leave(request):
+    return render(request, 'trainees_leave.html')
 

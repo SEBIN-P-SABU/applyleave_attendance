@@ -11,4 +11,7 @@ urlpatterns = [
     re_path(r'^Requestedleave$', views.Requestedleave, name='Requestedleave'),
     re_path(r'^Trainers_Calendar$', views.Trainers_Calendar, name='Trainers_Calendar'),
     re_path(r'^Trainers_Attendancetable$', views.Trainers_Attendancetable, name='Trainers_Attendancetable'),
+    re_path(r'^applyleavesub$', views.applyleavesub, name='applyleavesub'),
+    re_path(r'^trainers_leave$', views.trainers_leave, name='trainers_leave'),
+    re_path(r'^trainees_leave$', views.trainees_leave, name='trainees_leave'),
 ]

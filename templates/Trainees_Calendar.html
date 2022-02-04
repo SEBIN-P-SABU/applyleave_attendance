@@ -1,30 +1,55 @@
-{% extends 'index.html' %} {% block content %}{% load static %}
+{%extends 'index.html'%}
+{% load static %}
+{% block content %}
+<div class="row" style="padding-top:50px; ">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-10" class="pull-right">
 
-    <br><br>
-    <div class="row" style="margin-left: -22px;">
-        <div class="col-md-10 grid-margin stretch-card">
-          <div class="card" style="margin-left: 20px;">
-            <div class="card-body">
-              <h4 class="card-title">Attendance :</h4>
-              <form class="forms-sample" action="/app/Trainees_Attendancetable">
-                <div class="form-group row" >
-                  <label for="exampleInputEmail2"  class="col-sm-3 col-form-label">From</label>
-                  <div class="col-sm-6">
-                    <input type="Date" class="form-control"  id="exampleInputStartdate">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="exampleInputMobile" class="col-sm-3 col-form-label">To</label>
-                  <div class="col-sm-6">
-                    <input type="Date" class="form-control" id="exampleInputEnddate">
-                  </div>
-                </div>
-                
-                  <a href="/app/Trainees_Attendancetable" style="color: aliceblue; text-decoration: none;float:right;margin-right:18vh">  <button type="submit" class="btn btn-success me-2">Submit</button></a>
-                </form>
+
+
+    <div class="col-md-10 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body" style="height:450px;padding-top:30px; ">
+          <br>
+          <center>
+            <h3 class="card-title">Attendance</h3>
+          </center>
+          <br><br>
+          <form class="forms-sample" action="/app/Trainees_Attendancetable">
+
+            <div class="form-group row">
+              <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Start Date</label>
+              <div class="col-sm-9">
+                <input type="Date" class="form-control" id="exampleInputStartdate">
+              </div>
             </div>
-          </div>
+            <div class="form-group row">
+              <label for="exampleInputMobile" class="col-sm-3 col-form-label">End Date</label>
+              <div class="col-sm-9">
+                <input type="Date" class="form-control" id="exampleInputEnddate">
+              </div>
+            </div><br><br>
+
+
+            <div class="row">
+
+              <center>
+                <button type="Submit" class="btn btn-outline-success btn-icon-text">
+                  <i class="mdi mdi-file-check btn-icon-prepend"></i> Submit </button>
+              </center>
+            </div>
         </div>
-       </div>
+        </form>
+      </div>
+
     </div>
-{%endblock%} 
+  </div>
+</div>
+
+
+
+</div>
+</div>
+
+
+{%endblock%}
